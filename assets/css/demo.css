@@ -47,6 +47,10 @@
     height: 130px;
     display: block;
 }
+.space-sm{
+    height: 65px;
+    display: block;
+}
 .navigation-example .img-src{
     background-attachment: scroll; 
 }
@@ -106,8 +110,7 @@
     color: #ddd !important;
 }
 .footer{
-    background-color: #DDDDDD;
-    background-image: url('../img/cover_4_blur.jpg');
+    background-color: #000000;
     background-attachment: fixed;
     position: relative;
 }
@@ -122,10 +125,10 @@
     margin-top: 25px;
     padding: 20px 0 15px;
     text-align: center;
-    color: #EEE;
+    color: #FFFFFF;
 }
 .footer .credits a{
-    color: #FFFFFF;
+    color: #000000;
 }
 .social-share{
     float: left;
@@ -288,7 +291,7 @@
     opacity: .8;
 }
 .credits a{
-    color: #FFFFFF;
+    color: #ddd;
 }
 .sharing-title{
     margin: 10px;
@@ -370,10 +373,20 @@
     height: 0;
 }
 .blurred-container .motto .border{
-    float: left;
+    float: none;
     border: 3px solid #FFFFFF;
     padding: 0px 30px;
     text-align: center;
+    color: rgba(0, 0, 0, 0.00);
+    font-size: 50px;
+    font-weight: 600;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.blurred-container .motto .border:hover{
+    color: #FFFFFF;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 .blurred-container .motto .no-right-border{
     border-right: none;
