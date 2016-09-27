@@ -46,8 +46,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 h1 .subtitle {
   display: block;
-  font-family: 'Grand Hotel',cursive;
-  margin: 0 0 30px; }
+  font-family: 'Cabin Condensed', sans-serif;
+  margin: 0 0 30px;
+  color: #F15A29;
+}
 
 .text-primary, .text-primary:hover {
   color: #3472F7 !important; }
@@ -661,7 +663,7 @@ input.ct-red + span + label + span.switch-right {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f2',GradientType=0 );
   /* IE6-9 */
   border-radius: 50%;
-  box-shadow: 0 1px 1px #FFFFFF inset, 0 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 1px #FFFFFF inset, 0 1px 2px rgba(0, 0, 0, 0.1);
   height: 15px;
   width: 15px;
   cursor: pointer; }
@@ -1723,7 +1725,7 @@ input.ct-red + span + label + span.switch-right {
 @media (max-width: 767px) {
   .navbar-transparent {
     padding-top: 0px;
-    background-color: rgba(0, 0, 0, 0.45); }
+    background-color: rgba(0, 0, 0, 1); }
 
   .body-click {
     right: 230px; }
@@ -1987,8 +1989,9 @@ input.ct-red + span + label + span.switch-right {
   [class*="navbar-"] .navbar-nav .open .dropdown-menu > li > a,
   [class*="navbar-"] .navbar-nav .open .dropdown-menu > li > a:hover,
   [class*="navbar-"] .navbar-nav .open .dropdown-menu > li > a:focus {
-    opacity: .7;
-    background: transparent; }
+    opacity: .9;
+    background: transparent;
+    color: #00AEEF;}
   [class*="navbar-"] .navbar-nav.navbar-nav .open .dropdown-menu > li > a:active {
     opacity: 1; }
   [class*="navbar-"] .navbar-nav .dropdown > a:hover .caret {

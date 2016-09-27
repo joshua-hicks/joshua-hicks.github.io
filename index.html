@@ -19,7 +19,7 @@
 
     <!--     Font Awesome     -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
   
 </head>
 
@@ -45,14 +45,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/">Joshua Hicks</a>
+              <a href="/">
+                    <div class="logo">
+                        <img src="assets/img/new_logo.png">
+                    </div>
+                </a>
             </div>
         
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                      <a href="#gsdk" class="dropdown-toggle" data-toggle="dropdown">Curious? <b class="caret"></b></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Curious? <b class="caret"></b></a>
                       <ul class="dropdown-menu">
                         <li><a href="#gsdk">Action</a></li>
                         <li><a href="#gsdk">Another action</a></li>
@@ -61,7 +65,7 @@
                         <li><a href="#gsdk">Something</a></li>
                       </ul>
                 </li>
-                <li><button href="/contact.html" class="btn btn-round btn-default" data-toggle="modal" data-target="#myModal">Contact</button></li>
+                <li><button href="#" id="con-button" class="btn btn-round btn-default" data-toggle="modal" data-target="#myModal">Contact</button></li>
               </ul>
               
             </div><!-- /.navbar-collapse -->
@@ -70,7 +74,7 @@
     </div><!--  end navbar -->
     <div class='blurred-container'>
         <div class="motto">
-            <div class="border"><div class="space-sm"></div>Not Inside<div class="space-sm"></div></div>
+            <div class="border"><div class="space-sm"></div>Look outside the box<br\><div class="space-sm"></div></div>
             <div>Think</div>
         </div>
         <div class="img-src" style="background-image: url('assets/img/blurred-black-cover.jpeg')"></div>
@@ -80,7 +84,7 @@
 
 <div class="main">
     <div class="container tim-container" style="max-width:800px; padding-top:25px">
-       <h1 class="text-center">Awesome looking header <br> just for my friends<small class="subtitle">This is like a small motto before the story.</small></h1>
+       <h1 class="text-center">Digital Strategy<br> for Small Businesses <small class="subtitle">Because small doesn't mean small minded.</small></h1>
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
            <!--     end extras -->        
@@ -94,15 +98,16 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
                       </div>
                       <div class="modal-body">
-                        ...
+                        <div class="cognito">
+                            <script src="https://services.cognitoforms.com/s/agsu03CIoUSRxmoFe5ug5A"></script>
+                            <script>Cognito.load("forms", { id: "1" });</script>
+                        </div>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
-                        <div class="divider"></div>
-                        <button type="button" class="btn btn-info btn-simple">Save</button>
                       </div>
                     </div>
                   </div>
@@ -126,7 +131,7 @@
         </div>
         <div class="row">
             <div class="credits">
-                &copy; 2016 Joshua Hicks, opportunity + expertise + <i class="fa fa-heart heart" alt="love"></i> = success.
+                &copy; 2016 Joshua Hicks || Ideas + Expertise + <i class="fa fa-heart heart" alt="love"></i>
             </div>
         </div>
     </div>
