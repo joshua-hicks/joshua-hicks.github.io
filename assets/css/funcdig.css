@@ -1,0 +1,32 @@
+video { 
+    display: block; 
+}
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover; 
+}
+.fnc-red {
+    color: #DD2C1F;
+}
+.fnc-txt {
+    color: #4e4e4f;
+}
+.alert {
+  position: relative;
+  z-index: 999999;
+}
+.card .header-func {
+  background: linear-gradient(60deg, #2C1FDD, #DD2C1F);
+}

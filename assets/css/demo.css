@@ -1,18 +1,22 @@
-.tim-container{
-    background: #ffffff;
-
-}
 .tim-row{
     margin-bottom: 20px;
 }
-.tim-title{
+
+.tim-white-buttons {
+    background-color: #777777;
+}
+.title{
     margin-top: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    min-height: 32px;
+}
+.title.text-center{
+    margin-bottom: 50px;
 }
 .tim-typo{
     padding-left: 25%;
     margin-bottom: 40px;
-    position: relative;   
+    position: relative;
 }
 .tim-typo .tim-note{
     bottom: 10px;
@@ -27,7 +31,7 @@
     width: 260px;
 }
 .tim-row{
-    margin-top: 50px;
+    padding-top: 50px;
 }
 .tim-row h3{
     margin-top: 0;
@@ -37,31 +41,35 @@
 }
 #navbar-full .navbar{
     border-radius: 0 !important;
-    margin-bottom: 0;
-}
-.navigation-example{
-    margin-top: 0px;
+    margin-bottom: 15px;
+    z-index: 2;
 }
 .space{
     height: 130px;
     display: block;
 }
-.space-sm{
-    height: 65px;
+.space-110{
+    height: 110px;
+    display: block;
+}
+.space-50{
+    height: 50px;
+    display: block;
+}
+.space-70{
+    height: 70px;
     display: block;
 }
 .navigation-example .img-src{
-    background-attachment: scroll; 
+    background-attachment: scroll;
 }
-.main{
-    background-color: #FFFFFF;
-}
+
 .navigation-example{
-    height: 660px;
     background-image: url('../img/bg.jpg');
     background-position: center center;
     background-size: cover;
-    position: relative;
+    margin-top:0;
+    min-height: 740px;
 }
 #notifications{
     background-color: #FFFFFF;
@@ -73,24 +81,9 @@
     text-transform: capitalize;
 }
 
-.card{
-    background-color: #FFFFFF;
-    padding: 10px 0 20px;
-    width: 100%;
+#buttons .btn{
+    margin: 0 0px 15px;
 }
-.card h3{
-    margin-bottom: 20px;
-}
-.card button{
-    margin-top: 30px;
-}
-.subscribe-form{
-    padding-top: 20px;
-}
-.subscribe-form .form-control{
-    
-}
-
 .space-100{
     height: 100px;
     display: block;
@@ -108,309 +101,297 @@
 .txt-gray{
     color: #ddd !important;
 }
-.footer{
-    background-color: #000000;
-    background-attachment: fixed;
-    position: relative;
-}
-.heart{
-    color: #FF3B30;
-}
-.footer .overlayer{
-    background-color: rgba(27, 27, 27, 0.7);
-    position: relative;
-}
-.footer .credits {
-    margin-top: 25px;
-    padding: 20px 0 15px;
-    text-align: center;
-    color: #FFFFFF;
-}
-.footer .credits a{
-    color: #000000;
-}
-.social-share{
-    float: left;
-    margin-right: 8px;
-}
-.social-share a{
-    color: #FFFFFF;
-}
-#subscribe_email{
-    border-radius: 0;
-    border-left: 0;
-    border-right: 0;
-}
-.pick-class-label{
-    border-radius: 8px;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline;
-    font-size: 75%;
-    font-weight: bold;
-    line-height: 1;
-    margin-right: 10px;
-    padding: 15px 23px;
-    text-align: center;
-    vertical-align: baseline;
-    white-space: nowrap;
-}
 
-.parallax-pro{
+
+.parallax{
   width:100%;
+  height:570px;
+
   display: block;
-  position: relative;
-  background-color: #000;
-}
-.parallax-pro > .img-src{
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    
-}
-.parallax-pro:after{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.3);
-    display: block;
-    content: "";
-    z-index: 0;
-}
-.parallax-pro .container{
-    padding-top: 20px;
-    z-index: 1;
-    position: relative;
-}
-.parallax-pro .hello a{
-    color: #fff;
-    text-decoration: none;
-}
-.parallax-pro .hello{
-    font-size: 48px;
-    font-weight: 300;
-    position: relative;
-/*     width: 430px; */
-    margin: 30px auto 50px;
-}
-.parallax-pro .label{
-    font-size: 18px;
-    position: absolute;
-    text-transform: uppercase;
-    background-color: #FF9500;
-    color: #FFFFFF;
-    width: 60px;
-    margin-top: 10px;
-    margin-left: 10px;
-    padding: 0;
-    line-height: 30px;
-    text-align: center;
-    font-weight: 500;
-    letter-spacing: 0;
-}
-.parallax-pro small{
-    padding-top: 15px;
-    font-size: 20px;
-    display: block;
-    color: #fff;
-}
-.parallax-pro ul{
-     width: 280px;
-    margin: 0 auto;
-}
-.parallax-pro li{
-    padding: 9px 0;
-    border-bottom: 1px solid #777;
-}
-.parallax-pro .actions{
-    margin-top: 40px;
-}
-.parallax-pro .actions{
-    margin-left: 10px;
-}
-.parallax-pro .motto{
-    color: #FFFFFF;
-    font-size: 64px;
-    font-weight: 600;
-    position: relative;
-    text-align: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
-    text-transform: uppercase;
-    z-index: 3;
-    margin: 0 auto;
-    top: 22%;
-    width: 285px;
-}
-.parallax-pro .motto .pro{
-    position: absolute;
-    font-size: 18px;
-    background-color: #FFFFFF;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 70px;
-    color: #333333;
-    text-shadow: 0 0 0;
-}
-.parallax-pro .motto .square{
-       padding: 7px 14px;
-    height: auto;
-    width: auto;
-    line-height: inherit;
-    border-radius: 6px;
-    bottom: 22px;
-    right: -25px;
-    color: #FFFFFF;
-    background-color: #ff9500;
-    font-weight: 300;
-    background-color: #ff9500;
-}
-.social-share{
-    margin-right: 0px;
-    margin-top: 10px;
-}
-.footer h4{
-    margin: 0px 0 20px;
-}
-.space-30{
-    height: 30px;
-    display: block;
-}
-.credits{
-    display: block;
-    margin: 15px 0;
-    color: #ddd;
-    opacity: .8;
-}
-.credits a{
-    color: #ddd;
-}
-.sharing-title{
-    margin: 10px;
-    line-height: 40px;
-}
-.social-line{
-    padding: 5px 0;
-}
-.section-gray{
-    padding: 10px 0;
-    background-color: #EEE;
-}
-.section-gray h5{
-    margin: 0;
-    line-height: 40px;
-}
-
-/*   EXTRA STUFF  */
-
-.blurred-container{
-  position:relative;
-  width:100%;
-  height:490px;
-  top:0;
-  left:0;
-}
-.blurred-container > .img-src{
-    position:fixed;
-    width:100%;
-    height:540px;
+  background-attachment: fixed;
     background-repeat:no-repeat;
     background-size:cover;
     background-position: center center;
-}
-.blur{
-  opacity:0;
+
 }
 
-.logo-container{
-    margin-top: 10px;
-}
 .logo-container .logo{
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #333333;
-    height: 50px;
     width: 50px;
     float: left;
+}
+
+.logo-container .brand{
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 18px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 7px;
+    width: 70px;
+    height: 40px;
+    text-align: left;
+}
+.logo-container .brand-material{
+    font-size: 18px;
+    margin-top: 15px;
+    height: 25px;
+    width: auto;
 }
 .logo-container .logo img{
     width: 100%;
 }
-.logo-container .brand{
-    font-size: 18px;
-    color: #FFFFFF;
-    float: left;
-    height: 50px;
-    line-height: 20px;
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 60px;
+.navbar-small .logo-container .brand{
+    color: #333333;
 }
-.blurred-container .motto{
-    color: #FFFFFF;
-    font-size: 76px;
-    font-weight: 600;
 
-    text-align: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
-    text-transform: uppercase;
-    top: 100px;
-    z-index: 3;
-
+.fixed-section{
+    top: 90px;
+    max-height: 80vh;
+    overflow: scroll;
+}
+.fixed-section ul li{
+    list-style: none;
+}
+.fixed-section li a{
+    font-size: 14px;
+    padding: 2px;
     display: block;
-    margin: 0 auto;
-    position: relative;
-    width: 306px;
-    height: 0;
+    color: #666666;
 }
-.blurred-container .motto .border{
-    float: none;
-    border: 3px solid #FFFFFF;
-    padding: 0px 30px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.00);
-    font-size: 30px;
-    font-weight: 600;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+.fixed-section li a.active{
+    color: #00bbff;
 }
-.blurred-container .motto .border:hover{
-    color: #FFFFFF;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+.fixed-section.float{
+    position: fixed;
+    top: 100px;
+    width: 200px;
+    margin-top: 0;
 }
-.blurred-container .motto .no-right-border{
-    border-right: none;
+
+
+.parallax .parallax-image{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+.parallax .parallax-image img{
+    width: 100%;
 }
 
 @media (max-width: 768px){
-    .blurred-container .motto{
-        font-size: 60px;
-        width: 268px;
-        top: 130px;
-    }
-    #con-button {
-        margin-left: 10px;
-        color: #F15A29;
-        font-weight: 600;
-    }
-}
-.main{
-    background-color: #FFFFFF;
-    position: relative;
+    .parallax .parallax-image{
+         width: 100%;
+         height: 640px;
+         overflow: hidden;
+     }
+    .parallax .parallax-image img{
+       height: 100%;
+       width: auto;
+   }
 }
 
-#buttons .btn, #tooltips .btn{
-    margin-bottom: 15px;
+.separator{
+    content: "Separator";
+    color: #FFFFFF;
+    display: block;
+    width: 100%;
+    padding: 20px;
 }
-.img-dog{
-    display: inline-block;
+.separator-line{
+    background-color: #EEE;
+    height: 1px;
+    width: 100%;
+    display: block;
+}
+.separator.separator-gray{
+    background-color: #EEEEEE;
+}
+.social-buttons-demo .btn{
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+.img-container{
+    width: 100%;
+    overflow: hidden;
+}
+.img-container img{
+    width: 100%;
+}
+
+.lightbox img{
+    width: 100%;
+}
+.lightbox .modal-content{
+    overflow: hidden;
+}
+.lightbox .modal-body{
+    padding: 0;
+}
+@media screen and (min-width: 991px){
+    .lightbox .modal-dialog{
+        width: 960px;
+    }
+}
+@media (max-width: 991px){
+    .fixed-section.affix{
+        position: relative;
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 768px){
+    .btn, .btn-morphing{
+        margin-bottom: 10px;
+    }
+    .parallax .motto{
+        top: 170px;
+        margin-top: 0;
+        font-size: 60px;
+        width: 270px;
+    }
+}
+
+/*       Loading dots  */
+
+/*      transitions */
+.presentation .front, .presentation .front:after, .presentation .front .btn, .logo-container .logo, .logo-container .brand{
+     -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+
+#images h4{
+    margin-bottom: 30px;
+}
+#javascriptComponents{
+    padding-bottom: 0;
+}
+#javascriptComponents .btn-raised{
+    margin: 10px 5px;
+}
+
+
+/*      layer animation          */
+
+.layers-container{
+    display: block;
+    margin-top: 50px;
+    position: relative;
+}
+.layers-container img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.section-black {
+  background-color: #333;
+}
+
+.animate {
+  transition: 1.5s ease-in-out;
+  -moz-transition: 1.5s ease-in-out;
+  -webkit-transition: 1.5s ease-in-out;
+}
+
+.navbar-default.navbar-small .logo-container .brand{
+    color: #333333;
+}
+.navbar-transparent.navbar-small .logo-container .brand{
+    color: #FFFFFF;
+}
+.navbar-default.navbar-small .logo-container .brand{
+    color: #333333;
+}
+
+.sharing-area{
+    margin-top: 80px;
+}
+.sharing-area .btn{
+    margin: 15px 4px 0;
+    color: #FFFFFF;
+}
+.sharing-area .btn i{
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+.sharing-area .btn-twitter{
+    background-color: #55acee;
+    box-shadow: 0 2px 2px 0 rgba(85, 172, 238, 0.14), 0 3px 1px -2px rgba(85, 172, 238, 0.2), 0 1px 5px 0 rgba(85, 172, 238, 0.12);
+}
+.sharing-area .btn-twitter:hover{
+    box-shadow: 0 14px 26px -12px rgba(85, 172, 238, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(85, 172, 238, 0.2);
+}
+
+.sharing-area .btn-facebook{
+    background-color: #3b5998;
+    box-shadow: 0 2px 2px 0 rgba(59, 89, 152, 0.14), 0 3px 1px -2px rgba(59, 89, 152, 0.2), 0 1px 5px 0 rgba(59, 89, 152, 0.12);
+}
+.sharing-area .btn-facebook:hover{
+    box-shadow: 0 14px 26px -12px rgba(59, 89, 152, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(59, 89, 152, 0.2);
+}
+
+.sharing-area .btn-google-plus{
+    background-color: #dd4b39;
+    box-shadow: 0 2px 2px 0 rgba(221, 75, 57, 0.14), 0 3px 1px -2px rgba(221, 75, 57, 0.2), 0 1px 5px 0 rgba(221, 75, 57, 0.12);
+}
+.sharing-area .btn-google-plus:hover{
+    background-color: #dd4b39;
+    box-shadow: 0 14px 26px -12px rgba(221, 75, 57, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(221, 75, 57, 0.2);
+}
+
+.sharing-area .btn-github{
+    background-color: #333333;
+    box-shadow: 0 2px 2px 0 rgba(51, 51, 51, 0.14), 0 3px 1px -2px rgba(51, 51, 51, 0.2), 0 1px 5px 0 rgba(51, 51, 51, 0.12);
+}
+.sharing-area .btn-github:hover{
+    background-color: #333333;
+    box-shadow: 0 14px 26px -12px rgba(51, 51, 51, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(51, 51, 51, 0.2);
+}
+
+.section-thin,
+.section-notifications{
+    padding: 0;
+}
+.section-navbars{
+    padding-top: 0;
+}
+#navbar .navbar{
+    border-radius: 0;
+}
+.section-tabs{
+    background: #EEEEEE;
+}
+.section-pagination{
+    padding-bottom: 0;
+}
+.section-download h4{
     margin-bottom: 25px;
+}
+.section-examples a{
+    text-decoration: none;
+}
+.section-examples h5{
+    margin-top: 30px;
+}
+.components-page .wrapper > .header,
+.tutorial-page .wrapper > .header{
+    height: 400px;
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center center;
+}
+.components-page .title,
+.tutorial-page .title{
+    color: #FFFFFF;
 }
