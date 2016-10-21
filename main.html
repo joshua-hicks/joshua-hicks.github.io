@@ -203,19 +203,17 @@
 
 	    <div class="section section-download">
 	        <div class="container">
+                <h3 class="text-center">Share this page:</h3>
 	            <div class="row sharing-area text-center">
-	                    <a href="#" class="btn btn-twitter">
-	                        <i class="fa fa-twitter"></i>
-	                        Tweet
-	                    </a>
-	                    <a href="#" class="btn btn-facebook">
-	                        <i class="fa fa-facebook-square"></i>
-	                        Share
-	                    </a>
-						<a href="#" class="btn btn-google-plus">
-	                        <i class="fa fa-google-plus"></i>
-	                        Share
-	                    </a>
+	                    <button class="btn btn-twitter" onclick="shareTw()">
+                            <i class="material-icons">favorite</i> Tweet
+							</button>
+	                    <button class="btn btn-facebook" onclick="shareFb()">
+                            <i class="material-icons">favorite</i> Share
+							</button>
+						<button class="btn btn-linkedin" onclick="shareLi()">
+	                        <i class="material-icons">favorite</i> Share
+							</button>
 	            </div>
 	        </div>
 	    </div>
@@ -295,4 +293,16 @@
                 $("#thanks").removeClass("hidden");
             }
     </script>
+    <script type="text/javascript">
+        var thisp = window.location.href;
+        function shareFb() {
+            window.open("https://www.facebook.com/sharer/sharer.php?u=" +thisp, "_blank", "width=500,height=500")
+        }
+        function shareTw() {
+            window.open("https://twitter.com/home?status=Check%20out%3A%20this%20page", "_blank", "width=500,height=500")
+        }
+        function shareLi() {
+            window.open("https://www.linkedin.com/shareArticle?mini=true&url=" + thisp + "&title=&summary=&source=", "_blank", "width=500,height=500")
+        }
+    </script>    
 </html>
