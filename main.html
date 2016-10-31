@@ -25,6 +25,21 @@
 	document.createElement('video');
     </script>
     <![endif]-->
+    <script>
+        //scrollspy
+        $('body').scrollspy({target: ".navbar", offset: 50});
+        $("#myNavbar a").on('click', function(event) {
+            if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1500, function(){
+                window.location.hash = hash;
+            });
+            }
+        });
+    </script>
 </head>
 
 <body class="index-page">
@@ -59,31 +74,20 @@
 	    <div class="collapse navbar-collapse" id="navigation-index">
 	    	<ul class="nav navbar-nav navbar-right">
 				<li>
-					<a href="components-documentation.html" target="_blank">
-						<i class="material-icons">dashboard</i> Components
+					<a href="#get-started" target="_self">
+						<i class="material-icons">dashboard</i> GET STARTED
+					</a>
+				</li>
+                <li>
+					<a href="/about.html" target="_self">
+						<i class="material-icons">unarchive</i> ABOUT US
 					</a>
 				</li>
 				<li>
-					<a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" target="_blank">
-						<i class="material-icons">unarchive</i> Upgrade to PRO
+					<a href="/hosting.html" target="_self">
+						<i class="material-icons">unarchive</i> HOSTING
 					</a>
 				</li>
-				<li>
-					<a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-white btn-simple btn-just-icon">
-						<i class="fa fa-twitter"></i>
-					</a>
-				</li>
-				<li>
-					<a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-white btn-simple btn-just-icon">
-						<i class="fa fa-facebook-square"></i>
-					</a>
-				</li>
-				<li>
-					<a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-white btn-simple btn-just-icon">
-						<i class="fa fa-instagram"></i>
-					</a>
-				</li>
-
 	    	</ul>
 	    </div>
 	</div>
@@ -100,11 +104,10 @@
 	</div>
 
 	<div class="main main-raised">
-		<div class="section">
+		<div class="section" style="background-image: url('assets/img/comp-one.jpg'); background-size: cover; background-position: top center; min-height: 350px;">
 	    	<div class="container">
 	            <div class="title text-center">
-	                <h1 class="fnc-red">Full-Service Digital Solutions<br/>For Small Enterprises</h1>
-                    <h2>Strategy + Execution</h2>
+                    <h1 class="fnc-blk">Full-Service <span class="fnc-red">Digital Solutions</span><br/>For Small Enterprises</h1>
 	            </div>
             </div>
 	    </div>
@@ -112,7 +115,7 @@
 		<div class="section">
 	        <div class="container text-center">
                 <div class="title text-center">
-                    <h1>What we do:</h1>
+                    <h1 class="fnc-blk">What We Do:</h1>
 	            </div>
 	            <div class="row">
 	                <div class="col-md-4 text-center">
@@ -145,17 +148,56 @@
 	            </div>
 			</div>
 		</div>
+        
+        <div class="func-sepa"></div>
+        
+        <div class="section">
+	        <div class="container text-center">
+                <div class="title text-center">
+                    <h1 class="fnc-blk">Our Core Principles:</h1>
+	            </div>
+	            <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="info">
+                        <div class="icon icon-primary">
+				            <i class="material-icons">important_devices</i>
+				        </div>
+	                    <h2>Consumer Centricity</h2>
+	                    <h4 class="fnc-txt">From landing pages to high-volume eCommerce, we can craft (or optimize existing) sites to help you achieve your strategic goals.</h4>
+                        </div>
+	                </div>
+                    <div class="col-md-4 text-center">
+                        <div class="info">
+                        <div class="icon icon-primary">
+				            <i class="material-icons">tap_and_play</i>
+				        </div>
+	                    <h2>Data-Driven Decisions</h2>
+	                    <h4 class="fnc-txt">We are experts with digital advertising. We build highly-measurable digital campaigns that perform on any budget, in any industry.</h4>
+                        </div>
+	                </div>
+                    <div class="col-md-4 text-center">
+                        <div class="info">
+                        <div class="icon icon-primary">
+				            <i class="material-icons">tap_and_play</i>
+				        </div>
+	                    <h2>Something</h2>
+	                    <h4 class="fnc-txt">We are experts with digital advertising. We build highly-measurable digital campaigns that perform on any budget, in any industry.</h4>
+                        </div>
+	                </div>
+	            </div>
+			</div>
+		</div>
 
-		<div class="section section-full-screen section-signup" style="background-image: url('assets/img/comp-colab.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
+		<div id="get-started" class="section section-full-screen section-signup" style="background-image: url('assets/img/comp-colab.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<div class="card card-signup">
 							<form class="form" method="POST" action="https://formspree.io/joshua@functiondigital.net">
 								<div class="header header-func text-center">
-									<h4>Find Out How To Function Better</h4>
+									<h4>The Next Step - Find Out How To Function Better</h4>
 								</div>
-								<p class="text-divider">Every company is different. Let's discuss how we can help <span style="text-decoration: underline;">you</span>.</p>
+								<p class="text-divider">Every situation is different; generic solutions are not something we do.<br/>That's why we focus on our consultation, and not our web content.<br/>We're happy to share our expertise with no obligations - it's just a conversation away.<br/>So let's discuss how we can help <span style="text-decoration: underline;">you</span>.</p>
 								<div class="content">
 
 									<div class="input-group">
@@ -203,16 +245,16 @@
 
 	    <div class="section section-download">
 	        <div class="container">
-                <h3 class="text-center">Share this page:</h3>
+                <h3 class="text-center">Want To Share?</h3>
 	            <div class="row sharing-area text-center">
 	                    <button class="btn btn-twitter" onclick="shareTw()">
-                            <i class="material-icons">favorite</i> Tweet
+                            <i class="fa fa-twitter"></i>&nbsp;&nbsp;Tweet
 							</button>
 	                    <button class="btn btn-facebook" onclick="shareFb()">
-                            <i class="material-icons">favorite</i> Share
+                            <i class="fa fa-facebook-square"></i>&nbsp;&nbsp;Share
 							</button>
 						<button class="btn btn-linkedin" onclick="shareLi()">
-	                        <i class="material-icons">favorite</i> Share
+	                        <i class="fa fa-linkedin-square"></i>&nbsp;&nbsp;Share
 							</button>
 	            </div>
 	        </div>
@@ -250,14 +292,14 @@
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 					<i class="material-icons">clear</i>
 				</button>
-				<h4 class="modal-title">Modal title</h4>
+				<h4 class="modal-title">Where's the details?</h4>
 			</div>
 			<div class="modal-body">
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+				<p>Not on this website -- the details are in conversation. This is not the place to find "7 reasons to X", or any other form of generic content. Our solutions are not generic, so we need to know a little about you and your unique situation. Our focus is on our consultation, not our content. Don't worry, we're not stingy! We are happy to share our expertise -- the only obligation is a converstion.
 				</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default btn-simple">Nice Button</button>
+				<button type="button" class="btn btn-default btn-simple">Not a Button</button>
 				<button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
 			</div>
 		</div>
