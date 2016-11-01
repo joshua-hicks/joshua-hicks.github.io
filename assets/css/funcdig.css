@@ -20,6 +20,9 @@ video#bgvid {
 .fnc-red {
     color: #DD2C1F;
 }
+.fnc-blk {
+    color: #000000;
+}
 .fnc-txt {
     color: #4e4e4f;
 }
@@ -29,4 +32,24 @@ video#bgvid {
 }
 .card .header-func {
   background: linear-gradient(60deg, #2C1FDD, #DD2C1F);
+}
+.func-sepa {
+    border: 3px solid #DD2C1F;
+    margin: 0 10% 0 10%;
+}
+.icon-bar {
+    color: #DD2C1F;    
+}
+.navbar .navbar-nav > li > a {
+    float: right;
+    color: #DD2C1F;
+}
+.navbar .navbar-nav > li > a:hover {
+    color: #000000;
+}
+.profile-page .navbar-transparent {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+  color: #fff;
+  padding-top: 10px;
 }
