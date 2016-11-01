@@ -1992,8 +1992,8 @@ legend {
 }
 .navbar .navbar-nav > li > a {
   color: inherit;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
@@ -3324,12 +3324,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  */
-/*
- *
- *   SCSS by Creative Tim
- *   http://www.creative-tim.com
- *
- */
 .datepicker {
   top: 0;
   left: 0;
@@ -3757,5 +3751,3 @@ h2.title {
     margin-right: 10px;
   }
 }
-
-/*# sourceMappingURL=material-kit.css.map */
