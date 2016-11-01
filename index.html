@@ -301,5 +301,13 @@
         function shareLi() {
             window.open("https://www.linkedin.com/shareArticle?mini=true&url=" + thisp + "&title=&summary=&source=", "_blank", "width=500,height=500")
         }
-    </script>    
+    </script>
+    <script>
+    $(function(){ 
+     var navMain = $("#navigation-index");
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+     });
+ });
+    </script>
 </html>
