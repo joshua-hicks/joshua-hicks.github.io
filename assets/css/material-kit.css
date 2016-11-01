@@ -2344,7 +2344,7 @@ legend {
   background-color: transparent;
   box-shadow: none;
   color: #fff;
-  padding-top: 25px;
+  padding-top: 10px;
 }
 .navbar.navbar-transparent .logo-container .brand {
   color: #FFFFFF;
@@ -3725,7 +3725,7 @@ h2.title {
 .profile-page .navbar-transparent,
 .signup-page .navbar-transparent,
 .index-page .navbar-transparent {
-  padding-top: 25px;
+  padding-top: 10px;
 }
 
 @media (max-width: 991px) {
