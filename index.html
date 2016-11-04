@@ -19,11 +19,27 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/material-kit.css" rel="stylesheet"/>
+    <link href="assets/css/funcdig.css" rel="stylesheet" />
     <!--[if lt IE 9]>
     <script>
 	document.createElement('video');
     </script>
     <![endif]-->
+    <script>
+        //scrollspy
+        $('body').scrollspy({target: ".navbar", offset: 50});
+        $("#myNavbar a").on('click', function(event) {
+            if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1500, function(){
+                window.location.hash = hash;
+            });
+            }
+        });
+    </script>
 </head>
 
 <body class="index-page">
@@ -191,12 +207,7 @@
 								<div class="header header-func text-center">
 									<h4>The Next Step - Find Out How To Function Better</h4>
 								</div>
-								<span class="text-divider">
-                  <p>Every situation is different; generic solutions are not something we do.</p>
-                  <p>That's why we focus on our consultation, and not our web content.</p>
-                  <p>We're happy to share our expertise with no obligations - it's just a conversation away.</p>
-                  <p>Let's discuss how we can help <span style="text-decoration: underline;">you</span>.</p>
-                </span>
+								<p class="text-divider">Every situation is different; generic solutions are not something we do.<br/>That's why we focus on our consultation, and not our web content.<br/>We're happy to share our expertise with no obligations - it's just a conversation away.<br/>So let's discuss how we can help <span style="text-decoration: underline;">you</span>.</p>
 								<div class="content">
 
 									<div class="input-group">
@@ -277,7 +288,7 @@
 	            </ul>
 	        </nav>
 	        <div class="copyright pull-right">
-	            &copy; 2016 Function Digital <i class="material-icons">favorite</i>
+	            &copy; 2016 Function Digital <i class="material-icons">favorite</i>.
 	        </div>
 	    </div>
 	</footer>
@@ -306,26 +317,12 @@
             window.open("https://www.linkedin.com/shareArticle?mini=true&url=" + thisp + "&title=&summary=&source=", "_blank", "width=500,height=500")
         }
     </script>
-    <script type="text/javascript">
+    <script>
     $(function(){
      var navMain = $("#navigation-index");
      navMain.on("click", "a", null, function () {
          navMain.collapse('hide');
      });
  });
-    </script>
-    <script type="text/javascript">
-        $('body').scrollspy({target: ".navbar", offset: 50});
-        $("#myNavbar a").on('click', function(event) {
-            if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 1500, function(){
-                window.location.hash = hash;
-            });
-            }
-        });
     </script>
 </html>
