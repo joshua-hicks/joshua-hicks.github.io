@@ -3575,7 +3575,7 @@ h2.title {
 }
 
 .description {
-  color: #999999;
+  color: #6b6b6b;
 }
 
 .header-filter {
@@ -3749,5 +3749,109 @@ h2.title {
   .main-raised {
     margin-left: 10px;
     margin-right: 10px;
+  }
+}
+
+/****** FUNCDIG HERE ***********/
+video {
+    display: block;
+}
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+}
+.fnc-red {
+    color: #DD2C1F;
+}
+.fnc-blk {
+    color: #000000;
+}
+.fnc-txt {
+    color: #4e4e4f;
+}
+.alert {
+  position: relative;
+  z-index: 999999;
+}
+.card .header-func {
+  background: linear-gradient(60deg, #2C1FDD, #DD2C1F);
+}
+.func-sepa {
+    border: 3px solid #DD2C1F;
+    margin: 0 10% 0 10%;
+}
+.icon-bar {
+    color: #DD2C1F;
+}
+.navbar .navbar-nav > li > a {
+    float: right;
+    color: #DD2C1F;
+}
+.navbar .navbar-nav > li > a:hover {
+    color: #000000;
+}
+.profile-page .navbar-transparent {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+  color: #fff;
+  padding-top: 10px;
+}
+.logo-container .logo img{
+    width: 100%;
+}
+@media (max-width: 393px){
+	#bgvid-home {
+		display: none;
+	}
+}
+@media (min-width: 394px){
+	#bgimg-home {
+		display: none;
+	}
+}
+@media (min-width: 769px){
+.logo-container .logo{
+    overflow: hidden;
+    width: 250px;
+    float: left;
+}
+#fnc-mobile-logo {
+	display: none;
+}
+}
+@media (max-width: 768px) and (min-width: 501px) {
+  .logo-container .logo {
+	margin: 0 0 0 25px;
+  }
+  #fnc-mobile-logo {
+	display: none;
+}
+}
+@media (max-width: 500px) {
+  .logo-container .logo {
+    overflow: hidden;
+    width: 70px;
+    float: left;
+	margin: 0 0 0 25px;
+  }
+
+  #fnc-desktop-logo {
+	  display: none;
+  }
+  .card-signup .text-divider {
+    margin-left: 7px;
+    margin-right: 7px;
   }
 }

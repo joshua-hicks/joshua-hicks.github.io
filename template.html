@@ -19,27 +19,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/material-kit.css" rel="stylesheet"/>
-    <link href="assets/css/funcdig.css" rel="stylesheet" />  
     <!--[if lt IE 9]>
     <script>
 	document.createElement('video');
     </script>
     <![endif]-->
-    <script>
-        //scrollspy
-        $('body').scrollspy({target: ".navbar", offset: 50});
-        $("#myNavbar a").on('click', function(event) {
-            if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 1500, function(){
-                window.location.hash = hash;
-            });
-            }
-        });
-    </script>
 </head>
 
 <body class="landing-page">
@@ -197,7 +181,7 @@
 					</div>
 
 	            </div>
-			
+
 		</div>
 	</div>
 </div>
@@ -224,7 +208,7 @@
 	</div>
 </div>
 <!--  End Modal -->
-    
+
 </body>
     <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
@@ -247,5 +231,20 @@
         function shareLi() {
             window.open("https://www.linkedin.com/shareArticle?mini=true&url=" + thisp + "&title=&summary=&source=", "_blank", "width=500,height=500")
         }
+    </script>
+    <script>
+        //scrollspy
+        $('body').scrollspy({target: ".navbar", offset: 50});
+        $("#myNavbar a").on('click', function(event) {
+            if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1500, function(){
+                window.location.hash = hash;
+            });
+            }
+        });
     </script>
 </html>
