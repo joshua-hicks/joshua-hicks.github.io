@@ -24,6 +24,17 @@
 	document.createElement('video');
     </script>
     <![endif]-->
+<script type="text/javascript">
+    $('#bgvid').on('loadstart', function (event) {
+  $(this).addClass('loader3');
+  $(this).attr("poster", "/your/loading.gif");
+});
+
+$('#bgvid').on('canplay', function (event) {
+  $(this).removeClass('loader3');
+  $(this).removeAttr("poster");
+});
+</script>
 </head>
 
 <body class="index-page">
@@ -80,7 +91,8 @@
 
 <div class="wrapper">
 	<div class="header">
-		<video playsinline autoplay muted loop poster="assets/img/bg.png" id="bgvid">
+    <div class="loader3"></div>
+    <video playsinline autoplay muted loop poster="assets/img/bg.png" id="bgvid">
                 <source src="assets/vid/Final_Function_Home.webm" type="video/webm">
                 <source src="assets/vid/Final_Function_Home.mp4" type="video/mp4">
                 <source src="assets/vid/Final_Function_Home.ogv" type="video/ogg">
